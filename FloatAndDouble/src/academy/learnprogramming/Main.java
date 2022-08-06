@@ -25,7 +25,14 @@ public class Main {
         System.out.println("MyFloatValue="+myFloatValue);//7 digits after decimal
         System.out.println("My double Value="+myDoubleValue);//16 digits
         // double is more precise than the float
-        
+
+        //Challenge pound to kilogram conversion
+        //one pound =0.45359237kg
+
+        double noOfPound=200d;
+        double convertedKilogram=noOfPound*0.45359237d;
+        System.out.println("converted kilogram="+convertedKilogram);
+
 
 
     }
