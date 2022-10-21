@@ -8,7 +8,7 @@ public class Main {
         highScore=  calculateScore(true,10000,8,200);
         System.out.println("Your final score was " + highScore);
 
-
+        displayHighScorePosition("Ananthu",1);
     }
     public static int calculateScore(boolean gameOver,int score,int levelCompleted, int bonus) {
 
@@ -18,5 +18,11 @@ public class Main {
             return finalScore;
         }
         return -1;
+
+    }
+
+    public static void displayHighScorePosition(String name,int position) {
+        System.out.println("managed to get into position " + position + "on the high score table");
+
     }
 }
