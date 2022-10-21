@@ -2,8 +2,11 @@ package com.ananthu;
 
 public class Main {
     public static void main(String[] args) {
-        calculateScore(true,800,5,100);
-        calculateScore(true,10000,8,200);
+     int highScore =  calculateScore(true,800,5,100);
+        System.out.println("Your final score was " + highScore);
+
+        highScore=  calculateScore(true,10000,8,200);
+        System.out.println("Your final score was " + highScore);
 
 
     }
@@ -12,7 +15,6 @@ public class Main {
         if(gameOver) {
             int finalScore=score + (levelCompleted*bonus);
             finalScore+=1000;
-            System.out.println("Your final score was " + finalScore);
             return finalScore;
         }
         return -1;
